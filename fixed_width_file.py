@@ -7,7 +7,7 @@ to make sure we have received the right data set"""
 """In addition to this we can have multiple checks to make sure we have received the right data and they match exactly
 to the offset width that has been given in the spec file, that is if the input file is delimited in some way.(not implemented)"""
 
-
+import os
 import json
 import csv
 
@@ -40,7 +40,11 @@ def parse_fixed_width_file(input_file, column_names, offsets, encoding):
     return data,incorrect_data
 
 def write_to_csv(output_file, data, column_names, include_header, encoding):
-    #Write parsed data to a CSV file.
+    """
+    Write parsed data to a CSV file.
+    """
+
+    # Write data to the CSV file
     with open(output_file, 'w', newline='', encoding=encoding) as file:
         writer = csv.writer(file)
         if include_header:
