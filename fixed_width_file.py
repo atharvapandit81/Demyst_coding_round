@@ -49,9 +49,9 @@ def write_to_csv(output_file, data, column_names, include_header, encoding):
 
 if __name__ == "__main__":
     # File paths
-    spec_file = "Downloads/spec.json"
-    input_file = "Documents/new 1.txt"
-    output_file = "Downloads/output.csv"
+    spec_file = "spec.json"
+    input_file = "input.txt"
+    output_file = "output.csv"
 
     # Parse the spec.json file
     column_names, offsets, fixed_width_encoding, include_header, delimited_encoding = parse_spec_file(spec_file)
