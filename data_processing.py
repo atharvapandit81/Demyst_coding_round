@@ -71,7 +71,6 @@ if __name__ == "__main__":
     input_csv = "large_dataset.csv"
     output_csv = "anonymized_dataset.csv"
 
-    # Uncomment the line below to generate the input CSV file
     generate_large_csv(input_csv, 2000000)
 
     # Anonymize the data
