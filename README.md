@@ -9,6 +9,6 @@
 3) docker build -t demyst-coding-round .
 
 4) docker run --rm -v $(pwd)/spec.json:/app/spec.json \
-        -v $(pwd)/input.txt:/app/input.txt \
-        -v $(pwd)/output.csv:/app/output.csv \
-        demyst-coding-round
+    -v $(pwd)/input.txt:/app/input.txt \
+    -v $(pwd)/output.csv:/app/output.csv \
+    demyst-coding-round
